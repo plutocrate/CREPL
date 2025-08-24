@@ -1,0 +1,11 @@
+prefix=/home/plutus/root
+exec_prefix=/home/plutus/root
+libdir=/home/plutus/root/lib
+includedir=/home/plutus/root/include
+GSL_CBLAS_LIB=-lgslcblas
+
+Name: GSL
+Description: GNU Scientific Library
+Version: 1.15
+Libs: -L/home/plutus/root/lib -lgsl ${GSL_CBLAS_LIB} -lm -lm 
+Cflags: -I/home/plutus/root/include
