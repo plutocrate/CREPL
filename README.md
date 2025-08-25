@@ -10,6 +10,7 @@ $crepl
 >return 0;
 >}
 >--
+$./a.out
 ```
 
 Here look look -
