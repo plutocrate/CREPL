@@ -1,12 +1,17 @@
-# C REPL
-Well I use this setup to write C in REPL, just like python or lua, sighs, just remember it works the best for bash, i got the setup for fish too, but that's a pain in the arse. Whatever you can port it to whatever you want, and keep adding more packages as per your need in the $HOME/root dir (name's your choice tho). No more sys admin permision problem, all you gotta do is compile the libs to your $HOME/root dir.
-
-## How to
-`go_c << '--'`
-just fucking remember to write `--` after you are done.
+# CREPL
+1. Clone this fucking repo.
+2. Place stuff accordingly.
+3. Remember it works for bash, I have fish as well, but that's PITA.
 
 ```
-go_c<<'--'
-int main(){printf("working\n");}
---
+$crepl
+>int main(){
+>printf("this is how it works\n");
+>return 0;
+>}
+>--
 ```
+
+Here look look -
+1. '--' is a delimiter and when you're done, just write '--' as the final line.
+2. crepl includes library for you from the $HOME/root/ path, so next time build your libraries  manually at that location, or if you dont want that, just use the `pkg-config`.
